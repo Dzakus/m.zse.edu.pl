@@ -12,4 +12,13 @@ class Minify {
         return preg_replace("/<img .* \/>/", "", $string);
 
     }
+
+    static function limit_text($text, $limit = 400) {
+        if (strlen($text) > $limit) {
+            $pos = strpos($text, ' ', $limit-10);
+            return substr($text, 0, $pos)."...";
+        } else {
+            return $text;
+        }
+    }
 } 

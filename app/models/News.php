@@ -11,4 +11,7 @@ class News extends Eloquent{
     public function tresc(){
         return $this->hasOne('Tresc','id','id_tresci');
     }
+    public function kategorie_newsy(){
+        return $this->hasOne('Kategorie_Newsy','id','id_kategorii');
+    }
 } 
