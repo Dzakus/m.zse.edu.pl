@@ -21,4 +21,25 @@ class Minify {
             return $text;
         }
     }
+
+    static function table_responsive($file){
+        $html = file_get_contents("http://szkola.zse.edu.pl/zastepstwa/".$file);
+//        $cleared = preg_replace("/<([a-z][a-z0-9]*)[^>]*?(\/?)>/i",'<$1$2>', $html);
+        $singles = preg_split('/<tr>
+<td nowrap="" class="st17" align="LEFT">
+&nbsp;
+<\/td>
+<td nowrap="" class="st17" align="LEFT">
+&nbsp;
+<\/td>
+<td nowrap="" class="st17" align="LEFT">
+&nbsp;
+<\/td>
+<td nowrap="" class="st17" align="LEFT">
+&nbsp;
+<\/td>
+<\/tr>/', $html);
+//        $singles = explode('<tr><td nowrap="" class="st17" align="LEFT">&nbsp;</td><td nowrap="" class="st17" align="LEFT">&nbsp;</td><td nowrap="" class="st17" align="LEFT">&nbsp;</td><td nowrap="" class="st17" align="LEFT">&nbsp;</td></tr>', $html);
+        return $singles;
+    }
 } 

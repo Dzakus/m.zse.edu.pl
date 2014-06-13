@@ -31,16 +31,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="51" selection-start="122" selection-end="130" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewsesController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/NewsesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="113" selection-start="468" selection-end="468" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="323">
+            <state line="5" column="91" selection-start="339" selection-end="339" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
@@ -55,19 +46,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pushmany.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/pushmany.css">
+      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/news/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="20" selection-start="577" selection-end="577" vertical-scroll-proportion="0.79122806" vertical-offset="331" max-vertical-offset="901">
+            <state line="17" column="5" selection-start="654" selection-end="654" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+              <folding>
+                <marker date="1402571561135" expanded="true" signature="61:587" placeholder="..." />
+                <marker date="1402571561135" expanded="true" signature="167:580" placeholder="..." />
+                <marker date="1402571561135" expanded="true" signature="207:259" placeholder="..." />
+                <marker date="1402571561135" expanded="true" signature="296:366" placeholder="..." />
+                <marker date="1402571561135" expanded="true" signature="405:565" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/menu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="77" selection-start="197" selection-end="197" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="3179">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/news/show.blade.php">
+      <file leaf-file-name="NewsesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/NewsesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="603" selection-end="611" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
+            <state line="6" column="37" selection-start="155" selection-end="240" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubstitutesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/SubstitutesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="50" selection-start="315" selection-end="315" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Minify.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/Minify.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="2" selection-start="925" selection-end="925" vertical-scroll-proportion="0.93333334" vertical-offset="119" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/substitutes/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="47" selection-start="123" selection-end="123" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
@@ -83,22 +116,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/asdff.js" />
-        <option value="db-console:/6d597c2f/1c9f8975-8e65-444c-87a7-3e3e735dae98/" />
-        <option value="$PROJECT_DIR$/app/models/Kategoria_Newsy.php" />
-        <option value="$PROJECT_DIR$/app/models/News.php" />
-        <option value="$PROJECT_DIR$/public/js/responsive.js" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/app/helpers/Minify.php" />
         <option value="$PROJECT_DIR$/public/js/jquery.multilevelpushmenu.min.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/layouts/menu.blade.php" />
         <option value="$PROJECT_DIR$/public/js/pushmany.js" />
         <option value="$PROJECT_DIR$/app/views/news/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/NewsesController.php" />
         <option value="$PROJECT_DIR$/app/views/news/show.blade.php" />
         <option value="$PROJECT_DIR$/public/css/pushmany.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/database.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/menu.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/Zastepstwa.php" />
+        <option value="$PROJECT_DIR$/app/models/Zastepstwo.php" />
+        <option value="$PROJECT_DIR$/app/controllers/SubstitutesController.php" />
+        <option value="$PROJECT_DIR$/app/views/substitutes/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/helpers/Minify.php" />
       </list>
     </option>
   </component>
@@ -163,43 +196,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m.zse.edu.pl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m.zse.edu.pl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m.zse.edu.pl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m.zse.edu.pl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,6 +211,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="substitutes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,6 +338,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m.zse.edu.pl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m.zse.edu.pl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -360,6 +383,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\m.zse.edu.pl\app\models" />
+      <recent name="C:\xampp\htdocs\m.zse.edu.pl\app\views\substitutes" />
       <recent name="C:\xampp\htdocs\m.zse.edu.pl\public\js" />
       <recent name="C:\xampp\htdocs\m.zse.edu.pl\public\css" />
     </key>
@@ -401,14 +426,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23560606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2780303" sideWeight="0.67114097" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28257576" sideWeight="0.67114097" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -436,6 +461,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/news/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="22" selection-start="603" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="391">
+          <folding>
+            <marker date="1402571561135" expanded="true" signature="61:587" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="167:580" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="207:259" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="296:366" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="405:565" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Tresc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170" />
@@ -446,76 +484,28 @@
         <state line="13" column="35" selection-start="274" selection-end="274" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="730" selection-start="897" selection-end="899" vertical-scroll-proportion="0.16634052" vertical-offset="0" max-vertical-offset="511">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Kategorie_Newsy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="161" selection-end="161" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="9" column="34" selection-start="161" selection-end="161" vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="544" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.js">
+    <entry file="file://$PROJECT_DIR$/app/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="557">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.multilevelpushmenu.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="554" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="511">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/Minify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="341" selection-end="341" vertical-scroll-proportion="0.39005736" vertical-offset="0" max-vertical-offset="523">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="51" selection-start="122" selection-end="130" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="55" selection-start="175" selection-end="175" vertical-scroll-proportion="0.15625" vertical-offset="0" max-vertical-offset="3128">
+        <state line="56" column="37" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.34375" vertical-offset="765" max-vertical-offset="2397">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.70433146" vertical-offset="187" max-vertical-offset="782">
+        <state line="9" column="91" selection-start="493" selection-end="493" vertical-scroll-proportion="0.2881356" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/pushmany.js">
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/NewsesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="113" selection-start="468" selection-end="468" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="323">
+        <state line="5" column="91" selection-start="339" selection-end="339" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187">
           <folding />
         </state>
       </provider>
@@ -527,16 +517,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/news/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/models/Substitute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="603" selection-end="611" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="391">
+        <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.09751434" vertical-offset="0" max-vertical-offset="523">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/pushmany.css">
+    <entry file="file://$PROJECT_DIR$/app/controllers/NewsesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="20" selection-start="577" selection-end="577" vertical-scroll-proportion="0.79122806" vertical-offset="331" max-vertical-offset="901">
+        <state line="6" column="37" selection-start="155" selection-end="240" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="77" selection-start="197" selection-end="197" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/news/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="654" selection-end="654" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+          <folding>
+            <marker date="1402571561135" expanded="true" signature="61:587" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="167:580" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="207:259" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="296:366" placeholder="..." />
+            <marker date="1402571561135" expanded="true" signature="405:565" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SubstitutesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="50" selection-start="315" selection-end="315" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="919" column="9" selection-start="27315" selection-end="27315" vertical-scroll-proportion="0.3499044" vertical-offset="15440" max-vertical-offset="19142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/substitutes/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="47" selection-start="123" selection-end="123" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/Minify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="2" selection-start="925" selection-end="925" vertical-scroll-proportion="0.93333334" vertical-offset="119" max-vertical-offset="765">
           <folding />
         </state>
       </provider>

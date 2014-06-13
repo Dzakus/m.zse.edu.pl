@@ -3,10 +3,10 @@
         <h2><i class="fa fa-inverse fa-reorder"></i>&nbsp;</h2>
         <ul>
             <li>
-                <a href="{{ URL::route('root') }}">Strona Główna</a>
+                <a href="{{ URL::route('root') }}"><i class="fa fa-home"></i>Strona Główna</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-book"></i>Aktualności</a>
+                <a><i class="fa fa-book"></i>Aktualności</a>
                 <h2><i class="fa fa-book"></i>Aktualności</h2>
                 <ul>
                     @foreach($kategorie as $k)
@@ -15,6 +15,9 @@
                         </li>
                     @endforeach
                 </ul>
+            </li>
+            <li>
+                <a href="{{ URL::route('substitutes') }}">Zastępstwa</a>
             </li>
         </ul>
     </nav>
