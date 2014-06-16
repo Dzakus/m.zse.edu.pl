@@ -29,22 +29,19 @@ class Minify {
         $tables = $dom->getElementsByTagName('table');
         $rows = $tables->item(0)->getElementsByTagName('tr');
 
-        dd(e(Minify::getInnerHTML($rows->item(0), $dom)));
 
         $cols = null;
         $buffers = [];
         $buffer = '';
+        dd(e(Minify::getInnerHTML($rows->item(10)->getElementsByTagName('td')->item(0), $dom)));
         foreach ($rows as $row)
         {
             $cols = $row->getElementsByTagName('td');
-            $tmpRow = '';
-//            echo '**'.).'||';
-            if(Minify::getInnerHTML($cols->item(0), $dom) == '<td class="st17" nowrap="" align="LEFT">&nbsp;</td>'){
+            if(e(Minify::getInnerHTML($cols->item(0), $dom)) == '<td nowrap class="st17" align="LEFT">   </td>'){
                 array_push($buffers, $buffer);
                 $buffer = '';
             }else{
-//                echo('*');
-                $buffer.=Minify::getInnerHTML($row, $dom);
+                $buffer.=e(Minify::getInnerHTML($row, $dom));
             }
         }
 //        array_push($buffers, $buffer);
