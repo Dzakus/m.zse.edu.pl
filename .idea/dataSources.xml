@@ -2,7 +2,6 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="955254864">
     <data-source source="LOCAL" name="Data Source" uuid="1c9f8975-8e65-444c-87a7-3e3e735dae98">
-      <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc://</jdbc-url>

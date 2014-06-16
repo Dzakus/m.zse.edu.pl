@@ -23,36 +23,36 @@ class Minify {
     }
 
     static function table_responsive($file){
-//        $cleared = preg_replace("/<([a-z][a-z0-9]*)[^>]*?(\/?)>/i",'<$1$2>', $html);
+        $cleared = preg_replace("/<\/?nobr>/i", "", file_get_contents("http://szkola.zse.edu.pl/zastepstwa/".$file));
         $dom = new DOMDocument();
-        libxml_use_internal_errors(true);
-        //load the html
-        $html = $dom->loadHTMLFile("http://szkola.zse.edu.pl/zastepstwa/".$file);
-        libxml_clear_errors();
-        //discard white space
-        $dom->preserveWhiteSpace = false;
-
-        //the table by its tag name
+        $dom->loadHTML($cleared);
         $tables = $dom->getElementsByTagName('table');
-
-        //get all rows from the table
         $rows = $tables->item(0)->getElementsByTagName('tr');
+
+        dd(e(Minify::getInnerHTML($rows->item(0), $dom)));
+
         $cols = null;
         $buffers = [];
+        $buffer = '';
         foreach ($rows as $row)
         {
             $cols = $row->getElementsByTagName('td');
-            if($cols->length == 4){
+            $tmpRow = '';
+//            echo '**'.).'||';
+            if(Minify::getInnerHTML($cols->item(0), $dom) == '<td class="st17" nowrap="" align="LEFT">&nbsp;</td>'){
+                array_push($buffers, $buffer);
                 $buffer = '';
-                foreach($cols as $col){
-                    $buffer.=$col->getAttribute('class');
-                }
-                if(preg_match("/(st17){4}/", $buffer)){
-                    array_push($buffers, $buffer);
-                }
+            }else{
+//                echo('*');
+                $buffer.=Minify::getInnerHTML($row, $dom);
             }
         }
+//        array_push($buffers, $buffer);
         return $buffers;
-//        return $singles;
+    }
+
+    static function getInnerHTML($Node, $dom)
+    {
+        return $dom->saveHTML($Node);
     }
 } 
