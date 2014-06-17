@@ -27,7 +27,7 @@ class Responsive
                 array_push($buffers, $buffer);
                 $buffer = '';
             } else {
-                $buffer .= e($dom->getInnerHTML($row));
+                $buffer .= e($dom->saveHTML($row));
             }
         }
         return $buffers;
