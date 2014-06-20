@@ -1,4 +1,4 @@
-var fun = function(){
+var fun = function () {
     var menuW = '';
     if ($(window).width() < 615) {
         $('.navbar-brand').text("ZSEiI w Sosnowcu");
@@ -9,24 +9,25 @@ var fun = function(){
         return menuW = '20%';
     }
 };
-$(document).ready(function(){
+$(document).ready(function () {
     var w = fun();
-	$( '#menu' ).multilevelpushmenu({
+    $('#menu').multilevelpushmenu({
         collapsed: true,
         menuWidth: w,
         menuHeight: '100%',
         mode: "overlap",
-        onItemClick: function(){
+        onItemClick: function () {
             console.log(arguments);
             var $item = arguments[2],
                 link = $item.find('a').href();
         }
 
-	});
+    });
+    $('#menu').css('display', 'block')
 
 });
 
 $(window).resize(function () {
     fun();
-    $( '#menu' ).multilevelpushmenu( 'redraw' );
+    $('#menu').multilevelpushmenu('redraw');
 });
