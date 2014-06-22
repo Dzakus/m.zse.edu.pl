@@ -18,7 +18,7 @@
                 </ul>
             </li>
             <li>
-                <a href="{{ URL::route('substitutes') }}">Zastępstwa</a>
+                <a href="{{ URL::route('substitutes') }}"><i class="fa fa-list-alt"></i>Zastępstwa</a>
             </li>
         </ul>
     </nav>

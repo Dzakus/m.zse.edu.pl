@@ -21,23 +21,27 @@ class Responsive
         $buffers = [];
         $buffer = '';
         $tables = [];
-        $tmpTable = ['<table>', '<thead>', '<tr>', '</tr>', '</thead>', '<tbody>', '</tbody>', '</table>'];
+        $statics = ['title' => ''];
+        $tmpTable = ["<legend>" . $statics["title"] . "</legend>", '<table>', '<thead>', '<tr>', '</tr>', '</thead>', '<tbody>', '</tbody>', '</table>'];
 //        dd(e(Minify::getInnerHTML($rows->item(10)->getElementsByTagName('td')->item(0), $dom)));
         foreach ($rows as $row) {
-            if (preg_match("/.*ZastÄpstwa .*/", $row->nodeValue)) {
-                continue;
-            }
             $cols = $row->getElementsByTagName('td');
-            if ($cols->item(0)->getAttribute('class') == "st17") {
+            if (($cols->item(0)->getAttribute('class') == "st18") || ($cols->item(0)->getAttribute('class') == "st17")) {
                 $tables[count($tables)] = $tmpTable;
                 array_push($buffers, $buffer);
                 $buffer = '';
             } else {
                 foreach ($cols as $col) {
                     switch ($col->getAttribute('class')) {
+                        case "st0":
+                        {
+                            $statics['title'] = $col->nodeValue;
+                            $tmpTable[0] = "<legend>" . $statics["title"] . "</legend>";
+                            break;
+                        }
                         case "st1":
                         {
-                            $tmpTable = ArrayHelper::insert_after($tmpTable, ["<td>$col->nodeValue</td>"], 2);
+//                            $tmpTable = ArrayHelper::insert_after($tmpTable, ["<td>$col->nodeValue</td>"], 2);
                             break;
                         }
                         case "st2":
@@ -50,13 +54,13 @@ class Responsive
                 $buffer .= e($dom->saveHTML($row));
             }
         }
-        for ($i = 0; $i < count($tmpTable); $i++) {
-            for ($j = 0; $j < count($tmpTable[$i]); $j++) {
-                $tmpTable[$i][$j] = $tmpTable[$i][$j];
-            }
-        }
+//        for ($i = 0; $i < count($tmpTable); $i++) {
+//            for ($j = 0; $j < count($tmpTable[$i]); $j++) {
+//                $tmpTable[$i][$j] = $tmpTable[$i][$j];
+//            }
+//        }
 //        foreach($tmpTable as $t => $i){
-//            foreach($i as $ind => $val){
+//            foreach($i as $ind +=> $val){
 //            }
 ////            $tmpTable[$t] = e($i);
 //        }
