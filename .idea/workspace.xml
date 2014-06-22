@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16a78c3-0713-4d46-b148-f3a6479516e3" name="Default" comment="postęp w tworzeniu funkcji tworzącej responsywne zastępstwa">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.mmenu.all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.counters.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.counters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.counters.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.counters.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.mmenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.dragopen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.dragopen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.dragopen.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.dragopen.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/extensions/jquery.mmenu.effects.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/extensions/jquery.mmenu.fullscreen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.header.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.header.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.labels.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.labels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.labels.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.labels.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.mmenu.min.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.mmenu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.offcanvas.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.offcanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.offcanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.offcanvas.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.mmenu.oncanvas.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.mmenu.oncanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.mmenu.oncanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/jquery.mmenu.oncanvas.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/extensions/jquery.mmenu.positioning.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.searchfield.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.searchfield.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.searchfield.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.searchfield.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/extensions/jquery.mmenu.themes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/addons/jquery.mmenu.toggles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.toggles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/addons/jquery.mmenu.toggles.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/addons/jquery.mmenu.toggles.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/jquery.mmenu.umd.all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/jquery.mmenu.umd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/extensions/jquery.mmenu.widescreen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/substitutes-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/inc/umd_affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/umd/inc/umd_prefix.js" />
+    <list default="true" id="b16a78c3-0713-4d46-b148-f3a6479516e3" name="Default" comment="podgląda jak to ma wyglądać, mmsidebar pliki">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/Responsive.php" afterPath="$PROJECT_DIR$/app/helpers/Responsive.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/substitutes/index.blade.php" afterPath="$PROJECT_DIR$/app/views/substitutes/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/menu.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/menu.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pushmany.css" afterPath="$PROJECT_DIR$/css/pushmany.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m.zse.edu.pl.iws" />
@@ -99,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Responsive.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Responsive.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/Responsive.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="53" selection-start="920" selection-end="920" vertical-scroll-proportion="-4.076923" vertical-offset="268" max-vertical-offset="1156">
+            <state line="52" column="57" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.50274223" vertical-offset="524" max-vertical-offset="1105">
               <folding>
                 <element signature="e#7#86#0" expanded="false" />
               </folding>
@@ -113,16 +65,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/substitutes/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="20" selection-start="231" selection-end="231" vertical-scroll-proportion="-0.61538464" vertical-offset="86" max-vertical-offset="714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="substitutes-responsive.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/substitutes-responsive.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="34" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.7679181" vertical-offset="417" max-vertical-offset="1088">
+            <state line="6" column="35" selection-start="226" selection-end="226" vertical-scroll-proportion="-1.3076923" vertical-offset="68" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -162,13 +105,14 @@
         <option value="$PROJECT_DIR$/app/helpers/Table.php" />
         <option value="$PROJECT_DIR$/app/helpers/ArrrayHelper.php" />
         <option value="$PROJECT_DIR$/js/pushmany.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/menu.blade.php" />
         <option value="$PROJECT_DIR$/app/helpers/ArrayHelper.php" />
-        <option value="$PROJECT_DIR$/app/helpers/Responsive.php" />
         <option value="$PROJECT_DIR$/css/pushmany.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/main.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/substitutes/index.blade.php" />
         <option value="$PROJECT_DIR$/css/substitutes-responsive.css" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/menu.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/substitutes/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/helpers/Responsive.php" />
       </list>
     </option>
   </component>
@@ -559,14 +503,19 @@
       <created>1403030767384</created>
       <updated>1403030767384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="podgląda jak to ma wyglądać, mmsidebar pliki">
+      <created>1403423329183</created>
+      <updated>1403423329183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23560606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -582,7 +531,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -603,7 +551,8 @@
     <MESSAGE value="O wiele większy postęp, potrafi wykryć tą cholerną pustą linie" />
     <MESSAGE value="mały patch, literówka" />
     <MESSAGE value="postęp w tworzeniu funkcji tworzącej responsywne zastępstwa" />
-    <option name="LAST_COMMIT_MESSAGE" value="postęp w tworzeniu funkcji tworzącej responsywne zastępstwa" />
+    <MESSAGE value="podgląda jak to ma wyglądać, mmsidebar pliki" />
+    <option name="LAST_COMMIT_MESSAGE" value="podgląda jak to ma wyglądać, mmsidebar pliki" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -665,7 +614,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="77" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3179" />
+        <state line="5" column="77" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="3179">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/NewsesController.php">
@@ -745,7 +696,9 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1049" column="30" selection-start="33542" selection-end="33542" vertical-scroll-proportion="0.4395018" vertical-offset="17586" max-vertical-offset="18734" />
+        <state line="1049" column="30" selection-start="33542" selection-end="33542" vertical-scroll-proportion="0.4395018" vertical-offset="17586" max-vertical-offset="18734">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/responsive.js">
@@ -756,11 +709,6 @@
     <entry file="file://$PROJECT_DIR$/js/pushmany.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="36" selection-start="695" selection-end="700" vertical-scroll-proportion="0.6241497" vertical-offset="58" max-vertical-offset="646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="31" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3179" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/news/show.blade.php">
@@ -803,15 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/Responsive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="53" selection-start="920" selection-end="920" vertical-scroll-proportion="-4.076923" vertical-offset="268" max-vertical-offset="1156">
-          <folding>
-            <element signature="e#7#86#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="42" selection-start="1007" selection-end="1077" vertical-scroll-proportion="0.54942966" vertical-offset="0" max-vertical-offset="816">
@@ -819,17 +758,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/substitutes/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="231" selection-end="231" vertical-scroll-proportion="-0.61538464" vertical-offset="86" max-vertical-offset="714">
+        <state line="545" column="0" selection-start="29503" selection-end="29503" vertical-scroll-proportion="0.56125355" vertical-offset="9068" max-vertical-offset="13906">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/substitutes-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="34" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.7679181" vertical-offset="417" max-vertical-offset="1088">
+        <state line="56" column="34" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="502" max-vertical-offset="1190">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="102" selection-start="797" selection-end="797" vertical-scroll-proportion="0.60714287" vertical-offset="0" max-vertical-offset="560">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/substitutes/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="226" selection-end="226" vertical-scroll-proportion="-1.3076923" vertical-offset="68" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/Responsive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="57" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.50274223" vertical-offset="524" max-vertical-offset="1105">
+          <folding>
+            <element signature="e#7#86#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

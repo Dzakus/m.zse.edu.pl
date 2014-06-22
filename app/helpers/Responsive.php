@@ -22,48 +22,44 @@ class Responsive
         $buffer = '';
         $tables = [];
         $statics = ['title' => ''];
-        $tmpTable = ["<legend>" . $statics["title"] . "</legend>", '<table>', '<thead>', '<tr>', '</tr>', '</thead>', '<tbody>', '</tbody>', '</table>'];
+        $tmpTable = ["", '<table>', "", '<thead>', '<tr>', "", "", "", "", '</tr>', '</thead>', '<tbody>', "", '</tbody>', '</table>'];
 //        dd(e(Minify::getInnerHTML($rows->item(10)->getElementsByTagName('td')->item(0), $dom)));
         foreach ($rows as $row) {
+            $tmpTable[12] .= "<tr>";
             $cols = $row->getElementsByTagName('td');
             if (($cols->item(0)->getAttribute('class') == "st18") || ($cols->item(0)->getAttribute('class') == "st17")) {
                 $tables[count($tables)] = $tmpTable;
-                array_push($buffers, $buffer);
-                $buffer = '';
             } else {
                 foreach ($cols as $col) {
                     switch ($col->getAttribute('class')) {
                         case "st0":
                         {
-                            $statics['title'] = $col->nodeValue;
-                            $tmpTable[0] = "<legend>" . $statics["title"] . "</legend>";
+                            $tmpTable[0] = "<legend>" . $col->nodeValue . "</legend>";
                             break;
                         }
                         case "st1":
                         {
-//                            $tmpTable = ArrayHelper::insert_after($tmpTable, ["<td>$col->nodeValue</td>"], 2);
+                            $tmpTable[2] = $col->nodeValue;
                             break;
                         }
-                        case "st2":
+                        case "st4":
                         {
-
+                            if (preg_match("/\s*\d\s*/", $col->nodeValue)) {
+                                $tmpTable[12] .= '<td data-table="Lekcja">' . $col->nodeValue . '</td>';
+                            }
+                            if (preg_match("/.*lekcja.*/", $col->nodeValue)) {
+                                $tmpTable[5] = "<th>Lekcja</th>";
+                            } elseif (preg_match("/.*po lekcji.*/", $col->nodeValue)) {
+                                $tmpTable[5] = "<th>Po lekcji</th>";
+                            }
                             break;
                         }
                     }
                 }
-                $buffer .= e($dom->saveHTML($row));
             }
+            $tmpTable[12] .= "</tr>";
         }
-//        for ($i = 0; $i < count($tmpTable); $i++) {
-//            for ($j = 0; $j < count($tmpTable[$i]); $j++) {
-//                $tmpTable[$i][$j] = $tmpTable[$i][$j];
-//            }
-//        }
-//        foreach($tmpTable as $t => $i){
-//            foreach($i as $ind +=> $val){
-//            }
-////            $tmpTable[$t] = e($i);
-//        }
-        return $tmpTable;
+//
+        return e(join("|", $tmpTable));
     }
 } 
