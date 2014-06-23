@@ -18,17 +18,17 @@ class Responsive
 
 
         $cols = null;
-        $buffers = [];
-        $buffer = '';
         $tables = [];
-        $statics = ['title' => ''];
-        $tmpTable = ["", '<table>', "", '<thead>', '<tr>', "", "", "", "", '</tr>', '</thead>', '<tbody>', "", '</tbody>', '</table>'];
 //        dd(e(Minify::getInnerHTML($rows->item(10)->getElementsByTagName('td')->item(0), $dom)));
+        $tmpTable = ["", '<table>', "", '<thead>', '<tr>', "", "", "", "", '</tr>', '</thead>', '<tbody>', "", '</tbody>', '</table>'];
         foreach ($rows as $row) {
             $tmpTable[12] .= "<tr>";
             $cols = $row->getElementsByTagName('td');
+            if ($cols->item(0)->getAttribute('class') == "st1" && $cols->item(0)->nodeValue == "dyÅ¼ury") {
+                array_push($tables, $tmpTable);
+            }
             if (($cols->item(0)->getAttribute('class') == "st18") || ($cols->item(0)->getAttribute('class') == "st17")) {
-                $tables[count($tables)] = $tmpTable;
+                array_push($tables, $tmpTable);
             } else {
                 foreach ($cols as $col) {
                     switch ($col->getAttribute('class')) {
@@ -42,10 +42,12 @@ class Responsive
                             $tmpTable[2] = $col->nodeValue;
                             break;
                         }
+                        case "st7":
+                        case "st10":
                         case "st4":
                         {
                             if (preg_match("/\s*\d\s*/", $col->nodeValue)) {
-                                $tmpTable[12] .= '<td data-table="Lekcja">' . $col->nodeValue . '</td>';
+                                $tmpTable[12] .= '<td data-title="Lekcja">' . $col->nodeValue . '</td>';
                             }
                             if (preg_match("/.*lekcja.*/", $col->nodeValue)) {
                                 $tmpTable[5] = "<th>Lekcja</th>";
@@ -54,12 +56,60 @@ class Responsive
                             }
                             break;
                         }
+                        case "st5":
+                        {
+                            if (preg_match("/.*opis.*/", $col->nodeValue)) {
+                                $tmpTable[6] = "<th>Opis</th>";
+                            } elseif (preg_match("/.*miejsce.*/", $col->nodeValue)) {
+                                $tmpTable[6] = "<th>Miejsce</th>";
+                            }elseif (preg_match("/.*zast.*pca.*/", $col->nodeValue)) {
+                                $tmpTable[7] = "<th>Zastępca</th>";
+                            }
+                            break;
+                        }
+                        case "st6":
+                        {
+                            if (preg_match("/.*uwagi.*/", $col->nodeValue)) {
+                                $tmpTable[8] = "<th>Uwagi</th>";
+                            }
+                            break;
+                        }
+                        case "st11":
+                        case "st13":
+                        case "st16":
+                        case "st8":{
+                            if (preg_match("/.*Uczniowie zwolnieni do domu.*/", $col->nodeValue)) {
+                                $tmpTable[12] .= '<td data-title="Opis">' . $col->nodeValue . '</td>';
+                            }elseif (preg_match("/\d \w\(?\d?\)? - [a-zA-Z]*\d*/", $col->nodeValue)) {
+                                $tmpTable[12] .= '<td data-title="Opis">' . $col->nodeValue . '</td>';
+                            }elseif (preg_match("/[a-zA-Z]*\d*/", $col->nodeValue)) {
+                                $tmpTable[12] .= '<td data-title="Miejsce">' . $col->nodeValue . '</td>';
+                            }else{
+                                $tmpTable[12] .= '<td data-title="Zastępca">' . $col->nodeValue . '</td>';
+                            }
+                            break;
+                        }
+                        case "st12":
+                        case "st9":
+                        case "st14":
+                        case "st17":{
+                            $tmpTable[12] .= '<td data-title="Uwagi">' . $col->nodeValue . '</td>';
+                            break;
+                        
+                        }
+                        case "st20":
+                        case "st19":
+                        case "st15":{
+                            $tmpTable[12] .= '<td data-title="Po lekcji">' . $col->nodeValue . '</td>';
+                            break;
+                        }
                     }
                 }
             }
             $tmpTable[12] .= "</tr>";
         }
 //
-        return e(join("|", $tmpTable));
+        return $tables;
+        // return join("|", $tmpTable);
     }
 } 

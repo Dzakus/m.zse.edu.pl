@@ -3,7 +3,10 @@
 <link rel="stylesheet" href="{{ URL::to('css/substitutes-responsive.css'); }}">
 @stop
 @section('content')
-{{ Responsive::table($sub->plik) }}
+    @foreach(Responsive::table($sub->plik) as $table)
+        {{ join("", $table) }}
+        <br>
+    @endforeach
 <table class="substitutes-responsive">
     <thead>
     <tr>
