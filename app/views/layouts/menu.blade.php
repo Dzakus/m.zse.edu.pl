@@ -1,25 +1,23 @@
-<div id="menu" style="display: none">
-    <nav>
-        <h2><i class="fa fa-inverse fa-reorder"></i>&nbsp;</h2>
-        <ul>
-            <li>
-                <a href="{{ URL::route('root') }}"><i class="fa fa-home"></i>Strona Główna</a>
-            </li>
-            <li>
-                <a><i class="fa fa-book"></i>Aktualności</a>
+<nav id="my-menu">
+<!--     <h2><i class="fa fa-inverse fa-reorder"></i>&nbsp;</h2> -->
+    <ul>
+        <li>
+            <a href="{{ URL::route('root') }}"><i class="fa fa-home"></i>&nbsp;Strona Główna</a>
+        </li>
+        <li>
+            <a><i class="fa fa-book"></i>&nbsp;Aktualności</a>
 
-                <h2><i class="fa fa-book"></i>Aktualności</h2>
-                <ul>
-                    @foreach($kategorie as $k)
-                    <li>
-                        <a href="{{ URL::route('category', $k->id) }}">{{ $k->name }}</a>
-                    </li>
-                    @endforeach
-                </ul>
-            </li>
-            <li>
-                <a href="{{ URL::route('substitutes') }}"><i class="fa fa-list-alt"></i>Zastępstwa</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+           <!--  <h2><i class="fa fa-book"></i>Aktualności</h2> -->
+            <ul>
+                @foreach($kategorie as $k)
+                <li>
+                    <a href="{{ URL::route('category', $k->id) }}">{{ $k->name }}</a>
+                </li>
+                @endforeach
+            </ul>
+        </li>
+        <li>
+            <a href="{{ URL::route('substitutes') }}"><i class="fa fa-list-alt"></i>&nbsp;Zastępstwa</a>
+        </li>
+    </ul>
+</nav>

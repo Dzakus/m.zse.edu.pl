@@ -9,25 +9,12 @@ var fun = function () {
         return menuW = '20%';
     }
 };
-$(document).ready(function () {
-    var w = fun();
-    $('#menu').multilevelpushmenu({
-        collapsed: true,
-        menuWidth: w,
-        menuHeight: '100%',
-        mode: "overlap",
-        onItemClick: function () {
-            console.log(arguments);
-            var $item = arguments[2],
-                link = $item.find('a').href();
-        }
-
-    });
-    $('#menu').css('display', 'block')
-
-});
-
-$(window).resize(function () {
-    fun();
-    $('#menu').multilevelpushmenu('redraw');
-});
+   $(document).ready(function() {
+      $("#my-menu").mmenu({
+         slidingSubmenus: false,
+      });
+      $("#my-button").click(function() {
+         $("#my-menu").trigger("open.mm");
+      });
+      fun();
+   });

@@ -6,10 +6,10 @@
                 {{$news->tytul}}
             </div>
             <div class="panel-body">
-                {{Minify::d($news->tresc->tresc)}}
+                <nopre>{{Minify::d($news->tresc->tresc)}}</nopre>
             </div>
             <div class="panel-footer">
-                <p class="pull-right">{{$news->data}}</p>
+                <p class="pull-right"><p class="colorized">{{$news->data}}</p></p>
                 <p class="pull-left"><p class="colorized">{{$news->autor}}</p></p>
             </div>
         </div>

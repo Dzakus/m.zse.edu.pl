@@ -19,9 +19,10 @@
         href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext,cyrillic'
         rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ URL::to('css/jquery.multilevelpushmenu.css'); }}">
+    <link href="{{ URL::to('css/jquery.mmenu.css'); }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="{{ URL::to('bootstrap/css/bootstrap.min.css'); }}">
     <link rel="stylesheet" href="{{ URL::to('css/pushmany.css'); }}">
+
     @yield('add-css')
     <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
@@ -30,20 +31,27 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+<a id="hamburger" class="mm-fixed-top" href="#my-menu">
+<span></span>
+</a>
 
-</nav>
-<div id="lazy">
-    @yield('content')
-</div>
-@include('layouts.menu')
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<!-- <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
         <div class="navbar-brand" href="#">&nbsp;</div>
     </div>
-</nav>
+</nav> -->
+<div id="my-header" class="mm-fixed-top">
+    <div class="navbar-brand" href="#">&nbsp;</div>
+</div>
+
+<div id="lazy" class="content">
+    @yield('content')
+</div>
+@include('layouts.menu')
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('js/bootstrap.min.js'); }}"></script>
-<script src="{{ URL::to('js/jquery.multilevelpushmenu.min.js'); }}"></script>
+<script src="{{ URL::to('js/jquery.mmenu.min.all.js') }}" type="text/javascript"></script>
 <script type="text/javascript" src="{{ URL::to('js/pushmany.js') }}"></script>
 </body>
 </html>
