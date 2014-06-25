@@ -15,12 +15,25 @@ body{
     position: fixed;
 }
 
-.btn-success {
+.btn-success, .btn-info{
     width: 100%;
+    font-weight: 600;
+    text-shadow: 0 0px 5px #222222;
+    text-decoration: none;
+}
+
+.btn-info{
+    font-size: 17px;
+}
+
+.panel-body{
+    background: #fff;
+    color:#000;
 }
 
 .panel-footer {
     height: 100%;
+    background: #ddf;
 }
 
 .colorized {
@@ -33,10 +46,16 @@ body{
     width: 100%;
 }
 
-
+.panel-heading{
+    font-size: 18px;
+    text-shadow: 0 2px 2px #222222;
+}
 
 .navbar-brand{
    margin-left:70px;
+   font-size: 18px;
+   font-weight: 600;
+   text-shadow: 0 2px 2px #222222;
 }
 
 .row {
@@ -89,11 +108,7 @@ p
 {
     margin: 0 0 10px 0;
 }
-a, a:link, a:active, a:visited, a:hover
-{
-    color: #333;
-    text-decoration: underline;
-}
+
 a.button,
 span.button,
 select,
@@ -194,7 +209,7 @@ nav:not(.mm-menu)
 .content
 {
     background: url( menu-arrow.png ) 25px 15px no-repeat transparent;
-    padding: 150px 50px 50px 50px;
+    padding: 150px 50px 0px 50px;
 }
 .header.mm-fixed-top + .content
 {

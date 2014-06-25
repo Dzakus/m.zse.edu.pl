@@ -1,12 +1,12 @@
 @extends('layouts.main')
 @section('content')
 <div class="row">
-<div class="panel panel-primary col-lg-9 col-md-9 col-sm-9 col-xs-9" xmlns="http://www.w3.org/1999/html">
+<div class="panel panel-primary col-lg-13 col-md-13 col-sm-13 col-xs-13" xmlns="http://www.w3.org/1999/html">
             <div class="panel-heading">
                 {{$news->tytul}}
             </div>
             <div class="panel-body">
-                <nopre>{{Minify::d($news->tresc->tresc)}}</nopre>
+                {{Minify::d($news->tresc->tresc)}}
             </div>
             <div class="panel-footer">
                 <p class="pull-right"><p class="colorized">{{$news->data}}</p></p>
