@@ -11,10 +11,15 @@ var fun = function () {
 };
    $(document).ready(function() {
       $("#my-menu").mmenu({
-         slidingSubmenus: false,
+          slidingSubmenus: false
       });
       $("#my-button").click(function() {
          $("#my-menu").trigger("open.mm");
       });
       fun();
+
+       $("div#inpl_mail_msg pre")
+           .each(function () {
+               $(this).replaceWith(this.childNodes)
+           });
    });
