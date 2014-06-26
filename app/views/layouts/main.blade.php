@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
     <link href="{{ URL::to('css/jquery.mmenu.css'); }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="{{ URL::to('bootstrap/css/bootstrap.min.css'); }}">
-    <link rel="stylesheet" href="{{ URL::to('css/pushmany.css'); }}">
+    <link rel="stylesheet" href="{{ URL::to('css/style.css'); }}">
 
     @yield('add-css')
     <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>

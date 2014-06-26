@@ -1,27 +1,82 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #243342;
+    color:#000;
+    background-color: #eee;
+    font-family: Arial, Helvetica, Verdana;
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 100%;
+    position: relative;
+    -webkit-text-size-adjust: none;
 }
 
-#pushobj {
-    position: absolute;
-    top: 0px;
-    left: 10%;
-    padding-top: 30px;
-    background: #243342;
-    /*font-family: 'Open Sans Condensed', sans-serif;*/
-    /*font-size: 2em;*/
+.navbar-brand{
+    color:#fff;
+   margin-left:70px;
+   font-size: 18px;
+   font-weight: 600;
+   text-shadow: 0 2px 2px #222222;
+}
+
+.mm-fixed-top {
     z-index: 1;
+    background-color: #2e6196;
+    width: 100%;
 }
 
-.col-xs-13, .col-sm-13, .col-md-13, .col-lg-13{
+.content
+{
+    background: url( menu-arrow.png ) 25px 15px no-repeat transparent;
+    padding: 150px 20px 0px 20px;
+    text-align: center;
+}
+
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
     padding: 0 0 0 0;
 }
-#menu{
-    position: fixed;
+
+#lazy {
+    padding-top: 70px;
 }
 
-.navbar{
-    min-height: 80px;
+.pagination{
+    float:inherit;
+}
+
+.btn-success, .btn-info{
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 0 0px 5px #222222;
+    text-decoration: none;
+}
+
+.btn-info{
+    font-size: 17px;
+}
+
+.panel-heading{
+    font-size: 18px;
+    text-shadow: 0 2px 2px #222222;
+}
+
+.panel-body{
+    background: #fff;
+    color:#000;
+}
+
+.panel-footer {
+    height: 100%;
+    background: #ddf;
+    text-align: center;
+}
+
+.colorized {
+    color: #a55;
+}
+
+.row {
+    margin: 0 0;
+}
+
+.btn-info {
+    margin-bottom: 30px;
 }
