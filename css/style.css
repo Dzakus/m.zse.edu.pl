@@ -80,3 +80,20 @@ body {
 .btn-info {
     margin-bottom: 30px;
 }
+
+ /*table zastepstwa*/
+
+.t-title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tablesaw th{
+    border: 1px solid #000;
+}
+
+
+.tablesaw td{
+    padding: 10px 10px;
+    border: 1px solid #888;
+}

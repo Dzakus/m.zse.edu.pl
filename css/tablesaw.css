@@ -16,7 +16,6 @@ table.tablesaw {
 /* Structure */
 
 .tablesaw {
-    border: 0;
     padding: 0;
 }
 
@@ -25,12 +24,25 @@ table.tablesaw {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: .5em .7em;
+    padding: 0 0 0 .5em;
+
+}
+
+th{
+    background: #ccf;
 }
 
 .tablesaw thead tr:first-child th {
     padding-top: .9em;
-    padding-bottom: .7em;
+    padding-bottom: .9em;
+}
+
+.tablesaw th:first-child  {
+    width: 8%;
+}
+
+.tablesaw th:last-child  {
+    width: 25%;
 }
 
 .tablesaw-enhanced .tablesaw-bar .btn {
@@ -514,7 +526,9 @@ table.tablesaw tbody th {
 table.tablesaw thead th,
 table.tablesaw thead td {
     color: #444;
-    font-size: .9em;
+    font-size: 1em;
+    font-weight: bold;
+    width: 35%;
 }
 
 .tablesaw th,
@@ -527,8 +541,8 @@ table.tablesaw thead td {
 .tablesaw td,
 .tablesaw tbody th {
     vertical-align: middle;
-    font-size: 1.17em;
-    /* 19px */
+    font-size: 1.07em;
+    line-height: 20px;
 }
 
 .tablesaw td .btn,
@@ -537,31 +551,25 @@ table.tablesaw thead td {
 }
 
 .tablesaw thead {
-    border: 1px solid #e5e5e4;
     background: #e2dfdc;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2dfdc));
-    background-image: -webkit-linear-gradient(top, #fff, #e2dfdc);
-    background-image: linear-gradient(to bottom, #fff, #e2dfdc);
+    height:20px;
 }
 
 .tablesaw thead th {
     font-weight: 100;
     color: #777;
     text-transform: uppercase;
-    text-shadow: 0 1px 0 #fff;
     text-align: left;
 }
 
 .tablesaw thead tr:first-child th {
-    font-weight: normal;
+    font-weight: bold;
     font-family: sans-serif;
-    border-right: 1px solid #e4e1de;
 }
 
 /* Table rows have a gray bottom stroke by default */
 
 .tablesaw tbody tr {
-    border-bottom: 1px solid #dfdfdf;
 }
 
 .tablesaw caption {
@@ -579,8 +587,8 @@ table.tablesaw thead td {
 }
 
 .tablesaw-cell-label {
-    font-size: .65em;
-    text-transform: uppercase;
+    font-size: 16px;
+    text-transform: capitalize;
     color: #888;
     font-family: sans-serif;
 }
@@ -594,7 +602,6 @@ table.tablesaw thead td {
 /* Table rows have a gray bottom stroke by default */
 
 .tablesaw-stack tbody tr {
-    border-bottom: 1px solid #dfdfdf;
 }
 
 .tablesaw-stack td .tablesaw-cell-label,
@@ -620,10 +627,9 @@ table.tablesaw thead td {
     /* Make the label elements a percentage width */
     .tablesaw-stack td .tablesaw-cell-label,
     .tablesaw-stack th .tablesaw-cell-label {
+        width: 30%;
         display: block;
-        padding: 0 .6em 0 0;
-        min-width: 30%;
-        display: inline-block;
+        margin-bottom:5px;
     }
 
     /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */

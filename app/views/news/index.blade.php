@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     @foreach($news as $n)
-<div class="panel panel-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" xmlns="http://www.w3.org/1999/html">
+<div class="panel panel-primary col-lg-13 col-md-13 col-sm-13 col-xs-13" xmlns="http://www.w3.org/1999/html">
             <div class="panel-heading">
                 {{$n->tytul}}
             </div>
