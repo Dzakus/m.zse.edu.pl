@@ -8,6 +8,58 @@
  */
 class Responsive
 {
+    public static function substitutes($file)
+    {
+        $cleared = preg_replace("/<\/?nobr>/i", "", file_get_contents("http://szkola.zse.edu.pl/zastepstwa/f37a735e1fa1b72aa4a1e08eca0e066a57f0f7dc837364189661df8706b6bbfcafdfb20d589bbcb456b88d8368447e59d5522bcf0885f560f7004213ef281371"));
+//        $cleared = preg_replace("/<\/?nobr>/i", "", file_get_contents("http://szkola.zse.edu.pl/zastepstwa/" . $file));
+        $dom = new DOMDocument();
+        $dom->loadHTML($cleared);
+        $tables = $dom->getElementsByTagName('table');
+        $rows = $tables->item(0)->getElementsByTagName('tr');
+        $prototype = '
+        <table class="tablesaw tablesaw-stack" data-mode="stack">
+            <thead>
+                @thead
+            </thead>
+            <tbody>
+                @tbody
+            </tbody>
+        </table>';
+        $separatedTables = array();
+        $tmpTable = (string)$prototype;
+        $arr = array();
+        foreach ($rows as $i => $row) {
+            $cols = $row->getElementsByTagName('td');
+            $rowVal = "";
+            foreach ($cols as $col) {
+                $rowVal .= $col->nodeValue;
+            }
+            $rowVal = preg_replace('~\xc2\xa0~', 'X', $rowVal);
+            array_push($arr, $rowVal);
+            if (count_chars($rowVal)[ord("X")] >= 4) {
+                array_push($separatedTables, $tmpTable);
+                $tmpTable = (string)$prototype;
+            } else {
+                if (preg_match("/.*lekcja.*/", $cols->item(0)->nodeValue)) {
+                    $tmpTable = preg_replace("/@thead/", "<tr><th>Lekcja</th><th>Opis</th><th>Zastępca</th><th>Uwagi</th></tr>", $tmpTable);
+                } elseif (preg_match("/.*po lekcji.*/", $cols->item(0)->nodeValue)) {
+//                    $tmpTable = preg_replace("/@thead/", "<tr><th>Po lekcji</th><th>Miejsce</th><th>Zastępca</th><th>Uwagi</th></tr>", $tmpTable);
+                } else {
+                    if ($cols->item(3))
+                        $tmpTable = preg_replace("/@tbody/", "<tr><td>" . $cols->item(0)->nodeValue . "</td><td>" . $cols->item(1)->nodeValue . "</td><td>" . $cols->item(2)->nodeValue . "</td><td>" . $cols->item(3)->nodeValue . "</td></tr>@tbody", $tmpTable);
+                }
+            }
+        }
+        array_push($separatedTables, $tmpTable);
+        foreach ($separatedTables as $i => $tab) {
+            $separatedTables[$i] = preg_replace("/@tbody/", "", $tab);
+//            Å
+        }
+
+        return $separatedTables;
+//        die();
+    }
+
     public static function table($file)
     {
         $cleared = preg_replace("/<\/?nobr>/i", "", file_get_contents("http://szkola.zse.edu.pl/zastepstwa/" . $file));
@@ -15,12 +67,12 @@ class Responsive
         $dom->loadHTML($cleared);
         $tables = $dom->getElementsByTagName('table');
         $rows = $tables->item(0)->getElementsByTagName('tr');
-
+        $tables->item(0)->setAttribute('class', 'tablesaw tablesaw-stack');
 
         $cols = null;
         $tables = [];
 //        dd(e(Minify::getInnerHTML($rows->item(10)->getElementsByTagName('td')->item(0), $dom)));
-        $tmpTable = ["", '<table>', "", '<thead>', '<tr>', "", "", "", "", '</tr>', '</thead>', '<tbody>', "", '</tbody>', '</table>'];
+        $tmpTable = ["", '<table class="tablesaw tablesaw-stack">', "", '<thead>', '<tr>', "", "", "", "", '</tr>', '</thead>', '<tbody>', "", '</tbody>', '</table>'];
         foreach ($rows as $row) {
             $tmpTable[12] .= "<tr>";
             $cols = $row->getElementsByTagName('td');
@@ -109,7 +161,7 @@ class Responsive
             $tmpTable[12] .= "</tr>";
         }
 //
-        return $tables;
-        // return join("|", $tmpTable);
+//        return $cleared;
+        return join("", $tmpTable);
     }
 } 

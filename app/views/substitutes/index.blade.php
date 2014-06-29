@@ -1,40 +1,12 @@
 @extends('layouts.main')
 @section('add-css')
-<link rel="stylesheet" href="{{ URL::to('css/substitutes-responsive.css'); }}">
+<!--<link rel="stylesheet" href="{{ URL::to('css/substitutes-responsive.css'); }}">-->
 @stop
 @section('content')
-    @foreach(Responsive::table($sub->plik) as $table)
-        {{ join("", $table) }}
-        <br>
-    @endforeach
-<table class="substitutes-responsive">
-    <thead>
-    <tr>
-        <th>Lekcja</th>
-        <th>Opis</th>
-        <th>Zastępca</th>
-        <th>Uwagi</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td data-title="Lekcja">5</td>
-        <td data-title="Opis">2 A(2) - Uczniowie zwolnieni do domu</td>
-        <td data-title="Zastępca">&nbsp;</td>
-        <td data-title="Uwagi">&nbsp;</td>
-    </tr>
-    <tr>
-        <td data-title="Lekcja">5</td>
-        <td data-title="Opis">2 A(2) - Uczniowie zwolnieni do domu</td>
-        <td data-title="Zastępca">&nbsp;</td>
-        <td data-title="Uwagi">&nbsp;</td>
-    </tr>
-    <tr>
-        <td data-title="Lekcja">5</td>
-        <td data-title="Opis">2 A(2) - Uczniowie zwolnieni do domu</td>
-        <td data-title="Zastępca">&nbsp;</td>
-        <td data-title="Uwagi">&nbsp;</td>
-    </tr>
-    </tbody>
-</table>
+<?php
+foreach (Responsive::substitutes($sub->plik) as $dupa) {
+    echo Encoding::fixUTF8(Encoding::toUTF8($dupa)) . "<br>";
+//        iconv("Windows-1252","UTF-8", $dupa)."<br>";
+}
+echo file_get_contents("http://szkola.zse.edu.pl/zastepstwa/f37a735e1fa1b72aa4a1e08eca0e066a57f0f7dc837364189661df8706b6bbfcafdfb20d589bbcb456b88d8368447e59d5522bcf0885f560f7004213ef281371"); ?>
 @stop
