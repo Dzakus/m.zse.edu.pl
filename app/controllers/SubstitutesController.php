@@ -9,7 +9,7 @@
 class SubstitutesController extends BaseController{
     function index(){
         return View::make('substitutes.index')
-            ->with('sub', Substitute::whereRaw("id > 0")
+            ->with('subs', Substitute::whereRaw("id > 0")
                 ->orderBy('data', 'desc')->first())
             ->with('kategorie', Kategorie_Newsy::all());
     }
