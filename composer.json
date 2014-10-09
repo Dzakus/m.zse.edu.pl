@@ -3,8 +3,11 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
+	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"fideloper/proxy": "dev-master",
+		"barryvdh/laravel-migration-generator": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

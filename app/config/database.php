@@ -52,27 +52,27 @@ return array(
 			'prefix'   => '',
 		),
 
+		// 'mysql' => array(
+		// 	'driver'    => 'mysql',
+		// 	'host'      => 'localhost',
+		// 	'database'  => 'mobile',
+		// 	'username'  => 'root',
+		// 	'password'  => '',
+		// 	'charset'   => 'utf8',
+		// 	'collation' => 'utf8_unicode_ci',
+		// 	'prefix'    => '',
+		// ),
+
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'mobile',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => 's45.hekko.net.pl',
+			'database'  => 'zseii_nowa',
+			'username'  => 'zseii_nowa',
+			'password'  => 'Uq2f7WxN',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-//
-//        'mysql' => array(
-//            'driver'    => 'mysql',
-//            'host'      => '1671.m.tld.pl',
-//            'database'  => 'baza1671_17',
-//            'username'  => 'admin1671_17',
-//            'password'  => '1FwbHOp}Tm',
-//            'charset'   => 'utf8',
-//            'collation' => 'utf8_unicode_ci',
-//            'prefix'    => '',
-//        ),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',

@@ -9,12 +9,33 @@ body {
     -webkit-text-size-adjust: none;
 }
 
-.navbar-brand{
-    color:#fff;
-   margin-left:70px;
-   font-size: 18px;
-   font-weight: 600;
-   text-shadow: 0 2px 2px #222222;
+#navbar-brand{
+        padding:15px;
+    }
+@media (min-width:631px){
+
+
+    #navbar-brand:before{
+        color:#fff;
+        margin-top:20px;
+        margin-left:70px;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 0 2px 2px #222222;
+        content: "Zespół Szkół Elektronicznych i Informatycznych w Sosnowcu";
+    }
+}
+
+@media (max-width:630px){
+    #navbar-brand:before{
+        color:#fff;
+        margin-top:20px;
+        margin-left:70px;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 0 2px 2px #222222;
+        content: "ZSEiI w Sosnowcu";
+    }
 }
 
 .mm-fixed-top {
@@ -96,4 +117,22 @@ body {
 .tablesaw td{
     padding: 10px 10px;
     border: 1px solid #888;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #bbb
+}
+td,th {
+    border: 1px solid #9C9C9C;
+    padding: 4px;
+}
+
+
+@media screen and (max-width: 800px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
 }

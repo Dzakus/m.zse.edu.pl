@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://m.zse.edu.dev/',
+	'url' => 'http://localhost:8000',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'DV5cmNaNW28g2V7Dkqo1jzucZtmU4chf',
+	'key' => 'ppxIisiAKseg7AGsO8SzMLeiMXPzekva',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -121,6 +121,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Barryvdh\MigrationGenerator\MigrationGeneratorServiceProvider',
 
 	),
 

@@ -4,55 +4,40 @@ class Responsive
 {
     public static function substitutes($file)
     {
-        $cleared = preg_replace("/<\/?nobr>/i", "", file_get_contents("http://szkola.zse.edu.pl/zastepstwa/" . $file));
+        return Responsive::clear("http://szkola.zse.edu.pl/zastepstwa/" . $file);
+    }
+
+    public static function plan($file, $religia){
+        return Responsive::clear("http://szkola.zse.edu.pl/plany/" . $file, $religia);
+    }
+
+    private static function clear($url, $religia=false){
+        $cleared = preg_replace("/<\/?nobr>/i", "", file_get_contents($url));
         $cleared = mb_convert_encoding($cleared, 'HTML-ENTITIES', "UTF-8");
         $dom = new DOMDocument();
+        // if ($religia) {
+        //     $pattern_long = '{                          # recursive regex to capture contents of "main" DIV
+        //         (<div\s+class="WordSection1"\s*>        # match the "main" class DIV opening tag
+        //           (                                     # capture "main" DIV contents into $1
+        //             (?:                                 # non-cap group for nesting * quantifier
+        //               (?: (?!<div[^>]*>|</div>). )++    # possessively match all non-DIV tag chars
+        //             |                                   # or 
+        //               <div[^>]*>(?1)</div>              # recursively match nested <div>xyz</div>
+        //             )*                                  # loop however deep as necessary
+        //           )                                     # end group 1 capture
+        //         </div>)                                 # match the "main" class DIV closing tag
+        //         }six';  // single-line (dot matches all), ignore case and free spacing modes ON
+        //     if(preg_match($pattern_long, $cleared, $match)){
+        //         die($match[1]);
+        //     }
+        //     print_r($match);
+        //     return;
+        // }
         $dom->loadHTML($cleared);
         $tables = $dom->getElementsByTagName('table');
-        $rows = $tables->item(0)->getElementsByTagName('tr');
-        $prototype = '
-        <p class="t-title colorized">@ttitle</p>
-        <table class="tablesaw tablesaw-stack" data-mode="stack">
-            <thead>
-                @thead
-            </thead>
-            <tbody>
-                @tbody
-            </tbody>
-        </table>';
-        $separatedTables = array();
-        $tmpTable = (string)$prototype;
-        $arr = array();
-        foreach ($rows as $row) {
-            $cols = $row->getElementsByTagName('td');
-            $rowVal = "";
-            foreach ($cols as $col) {
-                $rowVal .= $col->nodeValue;
-            }
-            $rowVal = preg_replace('~\xc2\xa0~', 'X', $rowVal);
-            array_push($arr, $rowVal);
-            if (count_chars($rowVal)[ord("X")] >= 4) {
-                array_push($separatedTables, $tmpTable);
-                $tmpTable = (string)$prototype;
-            } else {
-                if (preg_match("/.*lekcja.*/", $cols->item(0)->nodeValue)) {
-                    $tmpTable = preg_replace("/@thead/", "<tr><th>Lekcja</th><th>Opis</th><th>Zastępca</th><th>Uwagi</th></tr>", $tmpTable);
-                } elseif (preg_match("/.*po lekcji.*/", $cols->item(0)->nodeValue)) {
-                    continue;
-                } elseif (preg_match("/.*st1.*/", $cols->item(0)->getAttribute('class'))) {
-                    $tmpTable = preg_replace("/@ttitle/", $cols->item(0)->nodeValue, $tmpTable);
-                } else {
-                    if ($cols->item(3))
-                        $tmpTable = preg_replace("/@tbody/", "<tr><td>" . $cols->item(0)->nodeValue . "</td><td>" . $cols->item(1)->nodeValue . "</td><td>" . $cols->item(2)->nodeValue . "</td><td>" . $cols->item(3)->nodeValue . "</td></tr>@tbody", $tmpTable);
-                }
-            }
-        }
-        array_push($separatedTables, $tmpTable);
-        foreach ($separatedTables as $i => $tab) {
-            $separatedTables[$i] = preg_replace("/@tbody/", "", $tab);
-        }
-
-        return $separatedTables;
+        while ($tables->item(0)->hasAttributes())
+            $tables->item(0)->removeAttributeNode($tables->item(0)->attributes->item(0));
+        return $dom->saveHTML($tables->item(0));
     }
 
 }

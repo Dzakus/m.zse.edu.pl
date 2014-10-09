@@ -17,7 +17,10 @@
             </ul>
         </li>
         <li>
-            <a href="{{ URL::route('substitutes') }}"><i class="fa fa-list-alt"></i>&nbsp;Zastępstwa</a>
+            <a href="{{ URL::route('substitutes') }}"><i class="fa fa-list"></i>&nbsp;Zastępstwa</a>
+        </li>
+        <li>
+            <a href="{{ URL::route('plan') }}"><i class="fa fa-table"></i>&nbsp;Plan Lekcji</a>
         </li>
     </ul>
 </nav>

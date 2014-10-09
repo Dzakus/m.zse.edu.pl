@@ -22,7 +22,7 @@
     <link href="{{ URL::to('css/jquery.mmenu.css'); }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="{{ URL::to('bootstrap/css/bootstrap.min.css'); }}">
     <link rel="stylesheet" href="{{ URL::to('css/style.css'); }}">
-    <link rel="stylesheet" href="{{ URL::to('css/tablesaw.css'); }}">
+    <!--<link rel="stylesheet" href="{{ URL::to('css/tablesaw.css'); }}">-->
 
     @yield('add-css')
     <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -37,11 +37,12 @@
 </a>
 
 <div id="my-header" class="mm-fixed-top">
-    <div class="navbar-brand" href="#">&nbsp;</div>
+    <div id="navbar-brand" href="#"></div>
 </div>
 
 <div id="lazy" class="content">
     @yield('content')
+    <a href="http://www.zse.edu.pl"><i class="fa fa-desktop"></i>    Idź na pełną</a>
 </div>
 @include('layouts.menu')
 
@@ -49,6 +50,7 @@
 <script type="text/javascript" src="{{ URL::to('js/bootstrap.min.js'); }}"></script>
 <script src="{{ URL::to('js/jquery.mmenu.min.all.js') }}" type="text/javascript"></script>
 <script type="text/javascript" src="{{ URL::to('js/pushmany.js') }}"></script>
-<script type="text/javascript" src="{{ URL::to('js/tablesaw.js') }}"></script>
+<!--<script type="text/javascript" src="{{ URL::to('js/tablesaw.js') }}"></script>-->
+@yield('add-js')
 </body>
 </html>
