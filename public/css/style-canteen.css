@@ -1,0 +1,136 @@
+body {
+    color:#000;
+    background-color: #eee;
+    font-family: Arial, Helvetica, Verdana;
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 100%;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+
+#navbar-brand{
+        padding:15px;
+    }
+@media (min-width:631px){
+
+
+    #navbar-brand:before{
+        color:#fff;
+        margin-top:20px;
+        margin-left:70px;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 0 2px 2px #222222;
+        content: "Zespół Szkół Elektronicznych i Informatycznych w Sosnowcu";
+    }
+}
+
+@media (max-width:630px){
+    #navbar-brand:before{
+        color:#fff;
+        margin-top:20px;
+        margin-left:70px;
+        font-size: 18px;
+        font-weight: 600;
+        text-shadow: 0 2px 2px #222222;
+        content: "ZSEiI w Sosnowcu";
+    }
+}
+
+.mm-fixed-top {
+    z-index: 1;
+    background-color: #2e6196;
+    width: 100%;
+}
+
+.content
+{
+    background: url( menu-arrow.png ) 25px 15px no-repeat transparent;
+    padding: 150px 20px 0px 20px;
+    text-align: center;
+}
+
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding: 0 0 0 0;
+}
+
+#lazy {
+    padding-top: 70px;
+}
+
+.pagination{
+    float:inherit;
+}
+
+.btn-success, .btn-info{
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 0 0px 5px #222222;
+    text-decoration: none;
+}
+
+.btn-info{
+    font-size: 17px;
+}
+
+.panel-heading{
+    font-size: 18px;
+    text-shadow: 0 2px 2px #222222;
+}
+
+.panel-body{
+    background: #fff;
+    color:#000;
+}
+
+.panel-footer {
+    height: 100%;
+    background: #ddf;
+    text-align: center;
+}
+
+.colorized {
+    color: #a55;
+}
+
+.row {
+    margin: 0 0;
+}
+
+.btn-info {
+    margin-bottom: 30px;
+}
+
+ /*table zastepstwa*/
+
+.t-title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tablesaw th{
+    border: 1px solid #000;
+}
+
+
+.tablesaw td{
+    padding: 10px 10px;
+    border: 1px solid #888;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,th {
+    padding: 4px;
+}
+
+
+@media screen and (max-width: 800px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}

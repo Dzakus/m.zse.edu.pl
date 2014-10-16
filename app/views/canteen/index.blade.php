@@ -4,3 +4,6 @@
 	    {{$canteen}}
     </div>
 @stop
+@section('add-css')
+<link rel="stylesheet" href="{{ URL::to('css/style-canteen.css'); }}">
+@stop

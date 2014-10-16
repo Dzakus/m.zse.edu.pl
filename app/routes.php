@@ -17,5 +17,5 @@ Route::get('/kategoria/{id}', array('as'=>'category', 'uses'=>'NewsesController@
 Route::get('news/{id}', array('as'=>'show', 'uses'=>'NewsesController@show'));
 Route::get('zastepstwa', array('as'=>'substitutes', 'uses'=>'SubstitutesController@index'));
 Route::get('plan', array('as'=>'plan', 'uses'=>'PlanController@index'));
-Route::get('canteen', array('as'=>'canteen', 'uses'=>'CanteenController@index'));
+Route::get('kantyna', array('as'=>'canteen', 'uses'=>'CanteenController@index'));
 Route::get('plan/{klasa}', array('as'=>'class', 'uses'=>'PlanController@show'));

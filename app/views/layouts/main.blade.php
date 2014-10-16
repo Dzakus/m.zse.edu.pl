@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
     <link href="{{ URL::to('css/jquery.mmenu.css'); }}" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="{{ URL::to('bootstrap/css/bootstrap.min.css'); }}">
-    <link rel="stylesheet" href="{{ URL::to('css/style.css'); }}">
+    
     <!--<link rel="stylesheet" href="{{ URL::to('css/tablesaw.css'); }}">-->
 
     @yield('add-css')
     <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 <body>
+@include('layouts.menu')
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -44,7 +45,7 @@
     @yield('content')
     <a href="http://www.zse.edu.pl"><i class="fa fa-desktop"></i>    Idź na pełną</a>
 </div>
-@include('layouts.menu')
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('js/bootstrap.min.js'); }}"></script>

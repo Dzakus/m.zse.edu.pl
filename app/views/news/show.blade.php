@@ -16,3 +16,6 @@
 </div>
 <a class="btn btn-info" href="{{URL::previous()}}">Back</a>
 @stop
+@section('add-css')
+<link rel="stylesheet" href="{{ URL::to('css/style.css'); }}">
+@stop
