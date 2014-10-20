@@ -15,6 +15,8 @@ class NewsesController extends BaseController{
             ->with('kategorie', Kategorie_Newsy::all());
     }
     function show($id){
-        return View::make('news.show')->with('news', News::find($id))->with('kategorie', Kategorie_Newsy::all());
+        $news = News::find($id);
+        Event::fire('news.viewed', array($news));
+        return View::make('news.show')->with('news', $news)->with('kategorie', Kategorie_Newsy::all());
     }
 }

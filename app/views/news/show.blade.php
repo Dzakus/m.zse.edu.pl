@@ -1,9 +1,10 @@
 @extends('layouts.main')
 @section('content')
 <div class="row">
-<div class="panel panel-primary col-lg-13 col-md-13 col-sm-13 col-xs-13" xmlns="http://www.w3.org/1999/html">
+<div class="panel panel-primary col-lg-12 col-md-12 col-sm-12 col-xs-12" xmlns="http://www.w3.org/1999/html">
             <div class="panel-heading">
                 {{$news->tytul}}
+                <span class="badge">{{$news->czytano}}</span>
             </div>
             <div class="panel-body">
                 {{Minify::d($news->tresc->tresc)}}
@@ -14,7 +15,7 @@
             </div>
         </div>
 </div>
-<a class="btn btn-info" href="{{URL::previous()}}">Back</a>
+<a class="btn btn-info" href="{{URL::previous()}}">Wróć</a>
 @stop
 @section('add-css')
 <link rel="stylesheet" href="{{ URL::to('css/style.css'); }}">

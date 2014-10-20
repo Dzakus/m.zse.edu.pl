@@ -12,7 +12,7 @@ class PlanController extends BaseController{
         if(count($plan)){
             return View::make('plan.show')->with('plan', $plan)->with('plany', $plany)->with('kategorie', Kategorie_Newsy::all());
         }else{
-            // zwracać, że nie ma takiej klasy
+            return View::make('plan.notFound')->with('plany', $plany)->with('kategorie', Kategorie_Newsy::all())->with('notFound', $klasa);
         }
     }
 }

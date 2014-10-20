@@ -8,6 +8,7 @@
 
 class News extends Eloquent{
     protected $table = 'newsy';
+    public $timestamps = false;
     public function tresc(){
         return $this->hasOne('Tresc','id','id_tresci');
     }

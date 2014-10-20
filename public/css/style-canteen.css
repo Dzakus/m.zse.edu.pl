@@ -4,49 +4,63 @@ body {
     font-family: Arial, Helvetica, Verdana;
     font-size: 14px;
     line-height: 22px;
+    padding-top: 70px;
     min-height: 100%;
     position: relative;
     -webkit-text-size-adjust: none;
 }
+nav.navbar-default{
+    background-color: #2e6196; 
 
-#navbar-brand{
-        padding:15px;
-    }
-@media (min-width:631px){
-
-
-    #navbar-brand:before{
-        color:#fff;
-        margin-top:20px;
-        margin-left:70px;
-        font-size: 18px;
-        font-weight: 600;
-        text-shadow: 0 2px 2px #222222;
-        content: "Zespół Szkół Elektronicznych i Informatycznych w Sosnowcu";
-    }
 }
 
-@media (max-width:630px){
-    #navbar-brand:before{
-        color:#fff;
-        margin-top:20px;
-        margin-left:70px;
-        font-size: 18px;
-        font-weight: 600;
-        text-shadow: 0 2px 2px #222222;
-        content: "ZSEiI w Sosnowcu";
+@media(max-width: 767px){
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #fff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #BDBDBD;
     }
 }
-
-.mm-fixed-top {
-    z-index: 1;
-    background-color: #2e6196;
-    width: 100%;
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
 }
 
+.navbar-default .navbar-nav>li>a:hover{
+    color: #BDBDBD;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #BDBDBD;
+}
+
+.navbar-default .navbar-toggle{
+    border-color: #2e6196;
+    background-color:#2e6196;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{
+    border-color: #2e6196;
+    background-color:#fff;
+}
+
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar, 
+.navbar-default .navbar-toggle:focus .icon-bar{
+    background-color: #000;
+}
 .content
 {
-    background: url( menu-arrow.png ) 25px 15px no-repeat transparent;
     padding: 150px 20px 0px 20px;
     text-align: center;
 }
@@ -55,8 +69,9 @@ body {
     padding: 0 0 0 0;
 }
 
-#lazy {
-    padding-top: 70px;
+
+.center-block{
+    text-align: center;
 }
 
 .pagination{
@@ -65,11 +80,19 @@ body {
 
 .btn-success, .btn-info{
     width: 100%;
-    font-weight: 600;
-    text-shadow: 0 0px 5px #222222;
+    font-weight: bold;
+    /*text-shadow: 0 0px 5px #222222;*/
+    background-color: #ACACAC;
+    border-color: #ACACAC;
+    color: #428bca;
+
     text-decoration: none;
 }
-
+.btn-success:hover{
+    background-color: #999999;
+    color: #2e6196;
+    border-color: #ACACAC;
+}
 .btn-info{
     font-size: 17px;
 }
@@ -86,12 +109,12 @@ body {
 
 .panel-footer {
     height: 100%;
-    background: #ddf;
+    background: #F3F3F3;
     text-align: center;
 }
 
 .colorized {
-    color: #a55;
+    color: #001B86;
 }
 
 .row {
@@ -104,20 +127,6 @@ body {
 
  /*table zastepstwa*/
 
-.t-title{
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.tablesaw th{
-    border: 1px solid #000;
-}
-
-
-.tablesaw td{
-    padding: 10px 10px;
-    border: 1px solid #888;
-}
 
 table {
     border-collapse: collapse;
@@ -129,8 +138,8 @@ td,th {
 
 
 @media screen and (max-width: 800px) {
-	table {
-		overflow-x: auto;
-		display: block;
-	}
+    table {
+        overflow-x: auto;
+        display: block;
+    }
 }

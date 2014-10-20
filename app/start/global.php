@@ -17,6 +17,7 @@ ClassLoader::addDirectories(array(
 	app_path().'/models',
 	app_path().'/database/seeds',
     app_path().'/helpers',
+    app_path().'/handlers',
 
 ));
 
@@ -79,3 +80,4 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+Event::listen('news.viewed', 'NewsHandler@addViews');
