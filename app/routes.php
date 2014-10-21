@@ -19,3 +19,5 @@ Route::get('zastepstwa', array('as'=>'substitutes', 'uses'=>'SubstitutesControll
 Route::get('plan', array('as'=>'plan', 'uses'=>'PlanController@index'));
 Route::get('kantyna', array('as'=>'canteen', 'uses'=>'CanteenController@index'));
 Route::get('plan/{klasa}', array('as'=>'class', 'uses'=>'PlanController@show'));
+Route::get('organizacja', array('as'=>'organisation', 'uses'=>'OrganisationController@index'));
+Route::get('matura', array('as'=>'matura', 'uses'=>'MaturaController@index'));

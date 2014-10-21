@@ -10,7 +10,8 @@
     <link
         href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext,cyrillic'
         rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{{ URL::to('css/font-awesome.min.css'); }}">
     <link rel="stylesheet" type="text/css" href="{{ URL::to('bootstrap/css/bootstrap.css'); }}">
     @yield('add-css')
     <script type="text/javascript" src="http://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>

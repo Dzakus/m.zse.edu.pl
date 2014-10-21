@@ -38,6 +38,12 @@
         <li>
             <a href="{{ URL::route('canteen') }}"><i class="fa fa-cutlery"></i>&nbsp;Kantyna</a>
         </li>
+        <li>
+            <a href="{{ URL::route('organisation') }}"><i class="fa fa-calendar"></i>&nbsp;Organizacja roku</a>
+        </li>
+        <li>
+            <a href="{{ URL::route('matura') }}"><i class="fa fa-graduation-cap"></i>&nbsp;Matura</a>
+        </li>
     </ul>
     </div>
   </div>
